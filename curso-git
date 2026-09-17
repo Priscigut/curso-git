@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priscila Gutiérrez — Portafolio</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #e9edf1;
+      --muted: #97a1af;
+      --accent: #6c8cff;
+      --accent-soft: rgba(108, 140, 255, 0.15);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      max-width: 420px;
+      width: 100%;
+      padding: 40px 32px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      border: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+    }
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, var(--accent), #a06cff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 700;
+      color: white;
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+    .role {
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    p.bio {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+    .tag {
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+    .links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn {
+      flex: 1;
+      padding: 12px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+    .btn.primary {
+      background: var(--accent);
+      color: white;
+    }
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+    footer {
+      margin-top: 28px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">PG</div>
+    <h1>Priscila Gutiérrez</h1>
+    <p class="role">Estudiante de Git &amp; GitHub</p>
+    <p class="bio">
+      Aprendiendo a versionar proyectos, colaborar en equipo y publicar sitios web directamente desde GitHub Pages.
+    </p>
+    <div class="tags">
+      <span class="tag">Git</span>
+      <span class="tag">GitHub Pages</span>
+      <span class="tag">HTML/CSS</span>
+      <span class="tag">JavaScript</span>
+    </div>
+    <div class="links">
+      <a class="btn primary" href="https://github.com/Priscigut" target="_blank">GitHub</a>
+      <a class="btn secondary" href="mailto:tucorreo@ejemplo.com">Contacto</a>
+    </div>
+    <footer>Publicado con GitHub Pages 🚀</footer>
+  </div>
+</body>
+</html>
