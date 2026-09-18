@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curso Git</title>
+<style>
+  :root {
+    --bg: #f6f5f1;
+    --ink: #1c1c1a;
+    --muted: #6b6b63;
+    --accent: #1f5f4f;
+    --line: #dedad0;
+    --code-bg: #eceae2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 6rem;
+  }
+  .tag {
+    font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+    font-size: 0.85rem;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
+  h1 {
+    font-size: 2.6rem;
+    margin: 0.6rem 0 0.4rem;
+    letter-spacing: -0.02em;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 3rem;
+    max-width: 34ch;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 0 0 0.8rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--line);
+  }
+  section { margin-bottom: 3rem; }
+  p { margin: 0 0 1rem; max-width: 60ch; }
+  pre {
+    background: var(--code-bg);
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+    font-size: 0.9rem;
+    color: var(--ink);
+  }
+  a { color: var(--accent); }
+  footer {
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="tag">git log --oneline</div>
+    <h1>Curso Git</h1>
+    <p class="sub">Repositorio de práctica para aprender control de versiones con Git y GitHub.</p>
+
+    <section>
+      <h2>Sobre este proyecto</h2>
+      <p>Este es mi repositorio de práctica para el curso de Git. Aquí voy documentando lo que aprendo sobre ramas, commits y despliegue con GitHub Pages.</p>
+    </section>
+
+    <section>
+      <h2>Instalación</h2>
+      <p>Clona este repositorio y ejecuta el script:</p>
+      <pre>git clone https://github.com/priscigut/curso-git.git
+cd curso-git
+node script.js</pre>
+    </section>
+
+    <footer>
+      <a href="https://github.com/priscigut/curso-git">Ver repositorio en GitHub</a>
+    </footer>
+  </div>
+</body>
+</html>
